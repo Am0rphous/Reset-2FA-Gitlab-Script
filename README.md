@@ -4,7 +4,7 @@ This implies you are an admin, and that your token contains the scope `api` and 
 
 1. Download the script to your computer.
 2. Write your GitLab URL and your token in the `2fa.sh` script.
-3. The run:
+3. Syntax is as follows:
 ````bash
 bash 2fa.sh <username>
 bash 2fa.sh mike
