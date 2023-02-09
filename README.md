@@ -5,7 +5,7 @@ Write your GitLab domain in the `2fa.sh` script, pluss your token. The run
 ````bash
 bash 2fa.sh <username>
 bash 2fa.sh mike
-USER="$1"
+````
 
 If the user already has their 2fa disabled, the API returns following message:
 ````
