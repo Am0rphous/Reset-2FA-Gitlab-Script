@@ -2,7 +2,9 @@
 An insanely practical bash script that resets a GitLab users two-factor by only knowing their username.
 This implies you are an admin, and that your token contains the scope `api` and possibly `sudo`, but correct me if I'm wrong. [Inspo](https://docs.gitlab.com/ee/api/users.html#disable-two-factor-authentication)
 
-Download the script to your computer. Write your GitLab URL and your token in the `2fa.sh` script. The run:
+1. Download the script to your computer.
+2. Write your GitLab URL and your token in the `2fa.sh` script.
+3. The run:
 ````bash
 bash 2fa.sh <username>
 bash 2fa.sh mike
