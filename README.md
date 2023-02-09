@@ -8,7 +8,7 @@ bash 2fa.sh <username>
 bash 2fa.sh mike
 ````
 
-If the user already has their 2fa disabled, the API returns following message:
+If the user already has their 2fa disabled, the API returns following message, and you can of course ignore it:
 ````
 {"message":"400 Bad request - Two-factor authentication is not enabled for this user"}
 ````
