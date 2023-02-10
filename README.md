@@ -7,7 +7,9 @@ This implies you are an admin, and that your token contains the scope `api` and 
 3. Syntax is as follows:
 ````bash
 bash 2fa.sh <username>
-bash 2fa.sh mike
+bash 2fa.sh <username@mail.com>
+sh 2fa.sh mike
+sh 2fa.sh mike@mail.com
 ````
 
 If the user already has their 2fa disabled, the API returns following message, and you can of course ignore it:
