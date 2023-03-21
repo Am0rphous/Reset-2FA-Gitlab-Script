@@ -8,13 +8,16 @@ USER="$1"
 TOKEN="your secret token here"
 URL="https://example.gitlab.com"
 
-#Checking if you provide an username
+#Checking if you provide something
 if [[ -z $1 ]]; then
     echo ""
     echo " .. Gief me username plz 🤌🏼🤌🏼"
     echo ""
 else
-    #we need to save the users ID. Using the username won't work.
+    #removing everything after @
+    USER=$(echo $USER | awk -F "@" '{print $1}')
+    
+    #we need to save the users ID. Using simply the username won't work.
     ID=$(curl -s --header "PRIVATE-TOKEN: $TOKEN" -H "Content-Type: application/json" "$URL/api/v4/users?username=$USER"| jq -r '.[].id')
 
     #The command that actually resets the 2fa with an user id
