@@ -1,11 +1,12 @@
 #!/bin/bash
 #credit: github.com/Am0rphous
 #09.02.23
+#OS: macOS
 
 USER="$1"
 
 TOKEN="your secret token here"
-URL="example.gitlab.com"
+URL="https://example.gitlab.com"
 
 #Checking if you provide an username
 if [[ -z $1 ]]; then
