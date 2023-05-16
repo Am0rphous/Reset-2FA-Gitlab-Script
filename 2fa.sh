@@ -4,14 +4,13 @@
 #OS: macOS
 
 USER="$1"
-
 TOKEN="your secret token here"
 URL="https://example.gitlab.com"
 
-#Checking if you provide something
+#Checking if the variable is empty
 if [[ -z $1 ]]; then
     echo ""
-    echo " .. Gief me username plz 🤌🏼🤌🏼"
+    echo " .. Gief me username or mail plz 🤌🏼🤌🏼"
     echo ""
 else
     #removing everything after @
